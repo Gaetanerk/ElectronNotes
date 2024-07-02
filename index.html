@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+  <link href="./style.css" rel="stylesheet">
+  <title>Liste de notes</title>
+</head>
+
+<body>
+  <div>
+    <div id="tableauNotes">
+      <form id="formNote">
+        <input type="text" id="note" placeholder="Entrer la note">
+        <button type="submit" id="save">Ajouter la note</button>
+      </form>
+      <div id="noFile"></div>
+      <div id="list">
+        <ul id="notesListe"></ul>
+      </div>
+      <div id="moyenne"></div>
+    </div>
+
+  <!-- You can also require other files to run in this process -->
+  <script src="./renderer.js"></script>
+</body>
+
+</html>

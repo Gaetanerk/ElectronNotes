@@ -1,0 +1,12 @@
+body {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    background-color: ivory;
+}
+
+#note {
+    margin: 20px 0;
+}
